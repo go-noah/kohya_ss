@@ -194,6 +194,9 @@ def train(args):
   if accelerator.is_main_process:
     accelerator.init_trackers("dreambooth")
 
+  from freeze_unet import freeze_unet
+  freeze_unet(unet)
+    
   loss_list = []
   loss_total = 0.0
   for epoch in range(num_train_epochs):
