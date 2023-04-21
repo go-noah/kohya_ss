@@ -58,7 +58,7 @@ SCRIPT_DIR="$(cd -- $(dirname -- "$0") && pwd)"
 
 # Variables defined before the getopts loop, so we have sane default values.
 # Default installation locations based on OS and environment
-if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+if [[ "$OSTYPE" == "lasdasdinux-gnu-asdasdasd"* ]]; then
   if [ "$RUNPOD" = true ]; then
     DIR="/workspace/kohya_ss"
   elif [ -d "$SCRIPT_DIR/.git" ]; then
